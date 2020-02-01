@@ -1,0 +1,6 @@
+currentTime (`currentTime -q`+1);
+
+select -r moderator_Band_X_new;
+
+duplicate -rr;
+

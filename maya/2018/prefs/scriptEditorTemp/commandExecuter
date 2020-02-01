@@ -1,0 +1,70 @@
+4global proc fbb_SnapToClosestVert(string $refObject, float $tolerance){
+string $vertices[] = `ls -sl -fl`;
+
+for ($each in $vertices)
+	{
+	fbb_runSnapToClosestVert $each $refObject $tolerance;
+	}
+
+}
+
+global proc fbb_runSnapToClosestVert (string $vertex, string $refObject, float $tolerance){
+
+
+//find the world space position of the vertex.
+float $vertPosition[] = `pointPosition -w $vertex`;
+
+//find out how many verts are in the reference object;
+
+int $refVertCount[] = `polyEvaluate -v $refObject`;
+
+
+//find the shape of the reference model.
+string $refShape[] = `listRelatives -f -s $refObject `;
+
+int $i;
+
+float $closestDistance = 10000;
+string $closestVert;
+float $closestPosition[];
+
+	//for each vertex in the reference model.
+	for ($i = 0; $i < $refVertCount[0]; $i++)
+		{
+		//find the world space position of the vert on the reference model;
+		float $refVertPos[] = `pointPosition -w ($refShape[0] + ".vtx[" + $i + "]")`;
+
+		//find the difference between the two positions.
+
+		float $xValue = $vertPosition[0] - $refVertPos[0];
+
+		float $yValue = $vertPosition[1] - $refVertPos[1];
+
+		float $zValue = $vertPosition[2] - $refVertPos[2];
+
+		vector $difference = <<$xValue, $yValue, $zValue>>;
+
+		//find the distance between the two points
+		float $distance = `mag $difference`;
+		
+		//if the distance between the verts is lower than the distance between the previous vert.
+		if ($distance < $closestDistance)
+			{
+			//store the closest distance so far.
+			$closestDistance = $distance;
+			//store the name of the closest vertex so far
+			$closestVert = ($refShape[0] + ".vtx[" + $i + "]");
+			//store the closest position so far.
+			$closestPosition = $refVertPos;
+			}		
+		}
+
+if ($closestDistance < $tolerance)
+	{
+		move -ws  $closestPosition[0] $closestPosition[1] $closestPosition[2] $vertex;
+		refresh;
+	}
+
+}
+
+fbb_SnapToClosestVert("tricuspid_valve_mesh",10000);

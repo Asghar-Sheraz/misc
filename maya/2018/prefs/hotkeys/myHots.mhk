@@ -1,0 +1,962 @@
+//Maya Preference 2018 (Release 1)
+//
+//
+
+//
+// The runtime commands referenced by the hotkeys
+//
+//
+// The name commands referenced by the hotkeys
+//
+nameCommand
+	-annotation "MergeVertexToolNameCommand"
+	-sourceType "mel"
+	-command ("MergeVertexTool")
+	MergeVertexToolNameCommand;
+
+nameCommand
+	-annotation "dR_connectToolNameCommand"
+	-sourceType "mel"
+	-command ("dR_connectTool")
+	dR_connectToolNameCommand;
+
+nameCommand
+	-annotation "PolyMergeNameCommand"
+	-sourceType "mel"
+	-command ("PolyMerge")
+	PolyMergeNameCommand;
+
+nameCommand
+	-annotation "CenterPivotNameCommand"
+	-sourceType "mel"
+	-command ("CenterPivot")
+	CenterPivotNameCommand;
+
+nameCommand
+	-annotation "FillHoleNameCommand"
+	-sourceType "mel"
+	-command ("FillHole")
+	FillHoleNameCommand;
+
+nameCommand
+	-annotation "DuplicateFaceNameCommand"
+	-sourceType "mel"
+	-command ("DuplicateFace")
+	DuplicateFaceNameCommand;
+
+nameCommand
+	-annotation "SplitEdgeRingToolNameCommand"
+	-sourceType "mel"
+	-command ("SplitEdgeRingTool")
+	SplitEdgeRingToolNameCommand;
+
+nameCommand
+	-annotation "PolyMergeOptionsNameCommand"
+	-sourceType "mel"
+	-command ("PolyMergeOptions")
+	PolyMergeOptionsNameCommand;
+
+nameCommand
+	-annotation "FreezeTransformationsNameCommand"
+	-sourceType "mel"
+	-command ("FreezeTransformations")
+	FreezeTransformationsNameCommand;
+
+nameCommand
+	-annotation "FreezeTransformationsOptionsNameCommand"
+	-sourceType "mel"
+	-command ("FreezeTransformationsOptions")
+	FreezeTransformationsOptionsNameCommand;
+
+nameCommand
+	-annotation "MirrorPolygonGeometryOptionsNameCommand"
+	-sourceType "mel"
+	-command ("MirrorPolygonGeometryOptions")
+	MirrorPolygonGeometryOptionsNameCommand;
+
+nameCommand
+	-annotation "HotkeyPreferencesWindowNameCommand"
+	-sourceType "mel"
+	-command ("HotkeyPreferencesWindow")
+	HotkeyPreferencesWindowNameCommand;
+
+nameCommand
+	-annotation "SmoothPolygonOptionsNameCommand"
+	-sourceType "mel"
+	-command ("SmoothPolygonOptions")
+	SmoothPolygonOptionsNameCommand;
+
+nameCommand
+	-annotation "ToggleGridNameCommand"
+	-sourceType "mel"
+	-command ("ToggleGrid")
+	ToggleGridNameCommand;
+
+nameCommand
+	-annotation "CombinePolygonsNameCommand"
+	-sourceType "mel"
+	-command ("CombinePolygons")
+	CombinePolygonsNameCommand;
+
+nameCommand
+	-annotation "BridgeEdgeOptionsNameCommand"
+	-sourceType "mel"
+	-command ("BridgeEdgeOptions")
+	BridgeEdgeOptionsNameCommand;
+
+nameCommand
+	-annotation "DeleteHistoryNameCommand"
+	-sourceType "mel"
+	-command ("DeleteHistory")
+	DeleteHistoryNameCommand;
+
+nameCommand
+	-annotation "AttributeEditorNameCommand"
+	-sourceType "mel"
+	-command ("AttributeEditor")
+	AttributeEditorNameCommand;
+
+nameCommand
+	-annotation "ToolSettingsWindowNameCommand"
+	-sourceType "mel"
+	-command ("ToolSettingsWindow")
+	ToolSettingsWindowNameCommand;
+
+nameCommand
+	-annotation "SelectVertexMaskNameCommand"
+	-sourceType "mel"
+	-command ("SelectVertexMask")
+	SelectVertexMaskNameCommand;
+
+nameCommand
+	-annotation "SelectEdgeMaskNameCommand"
+	-sourceType "mel"
+	-command ("SelectEdgeMask")
+	SelectEdgeMaskNameCommand;
+
+nameCommand
+	-annotation "SelectFacetMaskNameCommand"
+	-sourceType "mel"
+	-command ("SelectFacetMask")
+	SelectFacetMaskNameCommand;
+
+nameCommand
+	-annotation "SelectUVMaskNameCommand"
+	-sourceType "mel"
+	-command ("SelectUVMask")
+	SelectUVMaskNameCommand;
+
+nameCommand
+	-annotation "SelectToggleModeNameCommand"
+	-sourceType "mel"
+	-command ("SelectToggleMode")
+	SelectToggleModeNameCommand;
+
+nameCommand
+	-annotation "SelectMultiComponentMaskNameCommand"
+	-sourceType "mel"
+	-command ("SelectMultiComponentMask")
+	SelectMultiComponentMaskNameCommand;
+
+nameCommand
+	-annotation "ReversePolygonNormalsNameCommand"
+	-sourceType "mel"
+	-command ("ReversePolygonNormals")
+	ReversePolygonNormalsNameCommand;
+
+nameCommand
+	-annotation "UngroupNameCommand"
+	-sourceType "mel"
+	-command ("Ungroup")
+	UngroupNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonCubeNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonCube")
+	CreatePolygonCubeNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonCubeOptionsNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonCubeOptions")
+	CreatePolygonCubeOptionsNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonSphereNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonSphere")
+	CreatePolygonSphereNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonCylinderNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonCylinder")
+	CreatePolygonCylinderNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonConeNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonCone")
+	CreatePolygonConeNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonPlaneNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonPlane")
+	CreatePolygonPlaneNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonPlaneOptionsNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonPlaneOptions")
+	CreatePolygonPlaneOptionsNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonCylinderOptionsNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonCylinderOptions")
+	CreatePolygonCylinderOptionsNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonSphereOptionsNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonSphereOptions")
+	CreatePolygonSphereOptionsNameCommand;
+
+nameCommand
+	-annotation "PrefixHierarchyNamesNameCommand"
+	-sourceType "mel"
+	-command ("PrefixHierarchyNames")
+	PrefixHierarchyNamesNameCommand;
+
+nameCommand
+	-annotation "ReplaceObjectsNameCommand"
+	-sourceType "mel"
+	-command ("ReplaceObjects")
+	ReplaceObjectsNameCommand;
+
+nameCommand
+	-annotation "HypershadeWindowNameCommand"
+	-sourceType "mel"
+	-command ("HypershadeWindow")
+	HypershadeWindowNameCommand;
+
+nameCommand
+	-annotation "TextureViewWindowNameCommand"
+	-sourceType "mel"
+	-command ("TextureViewWindow")
+	TextureViewWindowNameCommand;
+
+nameCommand
+	-annotation "PreferencesWindowNameCommand"
+	-sourceType "mel"
+	-command ("PreferencesWindow")
+	PreferencesWindowNameCommand;
+
+nameCommand
+	-annotation "CreateNURBSCircleNameCommand"
+	-sourceType "mel"
+	-command ("CreateNURBSCircle")
+	CreateNURBSCircleNameCommand;
+
+nameCommand
+	-annotation "CreateNURBSSquareNameCommand"
+	-sourceType "mel"
+	-command ("CreateNURBSSquare")
+	CreateNURBSSquareNameCommand;
+
+nameCommand
+	-annotation "AddAttributeNameCommand"
+	-sourceType "mel"
+	-command ("AddAttribute")
+	AddAttributeNameCommand;
+
+nameCommand
+	-annotation "SetDrivenKeyOptionsNameCommand"
+	-sourceType "mel"
+	-command ("SetDrivenKeyOptions")
+	SetDrivenKeyOptionsNameCommand;
+
+nameCommand
+	-annotation "GraphEditorNameCommand"
+	-sourceType "mel"
+	-command ("GraphEditor")
+	GraphEditorNameCommand;
+
+nameCommand
+	-annotation "CreateLocatorNameCommand"
+	-sourceType "mel"
+	-command ("CreateLocator")
+	CreateLocatorNameCommand;
+
+nameCommand
+	-annotation "MatchTransformNameCommand"
+	-sourceType "mel"
+	-command ("MatchTransform")
+	MatchTransformNameCommand;
+
+nameCommand
+	-annotation "MatchPivotsNameCommand"
+	-sourceType "mel"
+	-command ("MatchPivots")
+	MatchPivotsNameCommand;
+
+nameCommand
+	-annotation "RenderGlobalsWindowNameCommand"
+	-sourceType "mel"
+	-command ("RenderGlobalsWindow")
+	RenderGlobalsWindowNameCommand;
+
+nameCommand
+	-annotation "RenderIntoNewWindowNameCommand"
+	-sourceType "mel"
+	-command ("RenderIntoNewWindow")
+	RenderIntoNewWindowNameCommand;
+
+nameCommand
+	-annotation "IPRRenderIntoNewWindowNameCommand"
+	-sourceType "mel"
+	-command ("IPRRenderIntoNewWindow")
+	IPRRenderIntoNewWindowNameCommand;
+
+nameCommand
+	-annotation "JointToolNameCommand"
+	-sourceType "mel"
+	-command ("JointTool")
+	JointToolNameCommand;
+
+nameCommand
+	-annotation "HighQualityDisplayNameCommand"
+	-sourceType "mel"
+	-command ("HighQualityDisplay")
+	HighQualityDisplayNameCommand;
+
+nameCommand
+	-annotation "MediumQualityDisplayNameCommand"
+	-sourceType "mel"
+	-command ("MediumQualityDisplay")
+	MediumQualityDisplayNameCommand;
+
+nameCommand
+	-annotation "LowQualityDisplayNameCommand"
+	-sourceType "mel"
+	-command ("LowQualityDisplay")
+	LowQualityDisplayNameCommand;
+
+nameCommand
+	-annotation "MoveToolNameCommand"
+	-sourceType "mel"
+	-command ("MoveTool")
+	MoveToolNameCommand;
+
+nameCommand
+	-annotation "DisplayWireframeNameCommand"
+	-sourceType "mel"
+	-command ("DisplayWireframe")
+	DisplayWireframeNameCommand;
+
+nameCommand
+	-annotation "RotateToolNameCommand"
+	-sourceType "mel"
+	-command ("RotateTool")
+	RotateToolNameCommand;
+
+nameCommand
+	-annotation "SeparatePolygonNameCommand"
+	-sourceType "mel"
+	-command ("SeparatePolygon")
+	SeparatePolygonNameCommand;
+
+nameCommand
+	-annotation "SelectHierarchyNameCommand"
+	-sourceType "mel"
+	-command ("SelectHierarchy")
+	SelectHierarchyNameCommand;
+
+nameCommand
+	-annotation "SetKeyNameCommand"
+	-sourceType "mel"
+	-command ("SetKey")
+	SetKeyNameCommand;
+
+nameCommand
+	-annotation "OutlinerRenameSelectedItemNameCommand"
+	-sourceType "mel"
+	-command ("OutlinerRenameSelectedItem")
+	OutlinerRenameSelectedItemNameCommand;
+
+nameCommand
+	-annotation "SmoothBindSkinOptionsNameCommand"
+	-sourceType "mel"
+	-command ("SmoothBindSkinOptions")
+	SmoothBindSkinOptionsNameCommand;
+
+nameCommand
+	-annotation "BakeSimulationNameCommand"
+	-sourceType "mel"
+	-command ("BakeSimulation")
+	BakeSimulationNameCommand;
+
+nameCommand
+	-annotation "dR_slideEdgeNameCommand"
+	-sourceType "mel"
+	-command ("dR_slideEdge")
+	dR_slideEdgeNameCommand;
+
+nameCommand
+	-annotation "dR_slideOffNameCommand"
+	-sourceType "mel"
+	-command ("dR_slideOff")
+	dR_slideOffNameCommand;
+
+nameCommand
+	-annotation "DisplayShadedNameCommand"
+	-sourceType "mel"
+	-command ("DisplayShaded")
+	DisplayShadedNameCommand;
+
+nameCommand
+	-annotation "CreateBlendShapeNameCommand"
+	-sourceType "mel"
+	-command ("CreateBlendShape")
+	CreateBlendShapeNameCommand;
+
+nameCommand
+	-annotation "NodeEditorWindowNameCommand"
+	-sourceType "mel"
+	-command ("NodeEditorWindow")
+	NodeEditorWindowNameCommand;
+
+nameCommand
+	-annotation "ExportSelectionNameCommand"
+	-sourceType "mel"
+	-command ("ExportSelection")
+	ExportSelectionNameCommand;
+
+nameCommand
+	-annotation "BakeNonDefHistoryNameCommand"
+	-sourceType "mel"
+	-command ("BakeNonDefHistory")
+	BakeNonDefHistoryNameCommand;
+
+nameCommand
+	-annotation "PolygonNormalEditToolNameCommand"
+	-sourceType "mel"
+	-command ("PolygonNormalEditTool")
+	PolygonNormalEditToolNameCommand;
+
+nameCommand
+	-annotation "DetachComponentNameCommand"
+	-sourceType "mel"
+	-command ("DetachComponent")
+	DetachComponentNameCommand;
+
+nameCommand
+	-annotation "CutUVsWithoutHotkeyNameCommand"
+	-sourceType "mel"
+	-command ("CutUVsWithoutHotkey")
+	CutUVsWithoutHotkeyNameCommand;
+
+nameCommand
+	-annotation "PlaybackToggleNameCommand"
+	-sourceType "mel"
+	-command ("PlaybackToggle")
+	PlaybackToggleNameCommand;
+
+nameCommand
+	-annotation "NextFrameNameCommand"
+	-sourceType "mel"
+	-command ("NextFrame")
+	NextFrameNameCommand;
+
+nameCommand
+	-annotation "PreviousFrameNameCommand"
+	-sourceType "mel"
+	-command ("PreviousFrame")
+	PreviousFrameNameCommand;
+
+nameCommand
+	-annotation "SnapToPointNameCommand"
+	-sourceType "mel"
+	-command ("SnapToPoint")
+	SnapToPointNameCommand;
+
+nameCommand
+	-annotation "DisplayLayerEditorWindowNameCommand"
+	-sourceType "mel"
+	-command ("DisplayLayerEditorWindow")
+	DisplayLayerEditorWindowNameCommand;
+
+nameCommand
+	-annotation "TemplateObjectNameCommand"
+	-sourceType "mel"
+	-command ("TemplateObject")
+	TemplateObjectNameCommand;
+
+nameCommand
+	-annotation "UntemplateObjectNameCommand"
+	-sourceType "mel"
+	-command ("UntemplateObject")
+	UntemplateObjectNameCommand;
+
+nameCommand
+	-annotation "dR_viewXrayTGLNameCommand"
+	-sourceType "mel"
+	-command ("dR_viewXrayTGL")
+	dR_viewXrayTGLNameCommand;
+
+nameCommand
+	-annotation "ToggleShelfNameCommand"
+	-sourceType "mel"
+	-command ("ToggleShelf")
+	ToggleShelfNameCommand;
+
+nameCommand
+	-annotation "dR_outlinerTGLNameCommand"
+	-sourceType "mel"
+	-command ("dR_outlinerTGL")
+	dR_outlinerTGLNameCommand;
+
+nameCommand
+	-annotation "OutlinerToggleDAGOnlyNameCommand"
+	-sourceType "mel"
+	-command ("OutlinerToggleDAGOnly")
+	OutlinerToggleDAGOnlyNameCommand;
+
+nameCommand
+	-annotation "OutlinerToggleShapesNameCommand"
+	-sourceType "mel"
+	-command ("OutlinerToggleShapes")
+	OutlinerToggleShapesNameCommand;
+
+nameCommand
+	-annotation "ToggleVisibilityAndKeepSelectionNameCommand"
+	-sourceType "mel"
+	-command ("ToggleVisibilityAndKeepSelection")
+	ToggleVisibilityAndKeepSelectionNameCommand;
+
+nameCommand
+	-annotation "MoveRotateScaleToolNameCommand"
+	-sourceType "mel"
+	-command ("MoveRotateScaleTool")
+	MoveRotateScaleToolNameCommand;
+
+nameCommand
+	-annotation "ScaleToolNameCommand"
+	-sourceType "mel"
+	-command ("ScaleTool")
+	ScaleToolNameCommand;
+
+nameCommand
+	-annotation "ImportNameCommand"
+	-sourceType "mel"
+	-command ("Import")
+	ImportNameCommand;
+
+nameCommand
+	-annotation "ConnectComponentsOptionsNameCommand"
+	-sourceType "mel"
+	-command ("ConnectComponentsOptions")
+	ConnectComponentsOptionsNameCommand;
+
+nameCommand
+	-annotation "LassoToolNameCommand"
+	-sourceType "mel"
+	-command ("LassoTool")
+	LassoToolNameCommand;
+
+nameCommand
+	-annotation "CreatePolygonPipeNameCommand"
+	-sourceType "mel"
+	-command ("CreatePolygonPipe")
+	CreatePolygonPipeNameCommand;
+
+nameCommand
+	-annotation "ScriptEditorNameCommand"
+	-sourceType "mel"
+	-command ("ScriptEditor")
+	ScriptEditorNameCommand;
+
+nameCommand
+	-annotation "ToggleStatusLineNameCommand"
+	-sourceType "mel"
+	-command ("ToggleStatusLine")
+	ToggleStatusLineNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisNegativeYNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisNegativeY")
+	ViewAlongAxisNegativeYNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisZNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisZ")
+	ViewAlongAxisZNameCommand;
+
+nameCommand
+	-annotation "CameraModeToggleNameCommand"
+	-sourceType "mel"
+	-command ("CameraModeToggle")
+	CameraModeToggleNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisXNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisX")
+	ViewAlongAxisXNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisYNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisY")
+	ViewAlongAxisYNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisNegativeXNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisNegativeX")
+	ViewAlongAxisNegativeXNameCommand;
+
+nameCommand
+	-annotation "ViewAlongAxisNegativeZNameCommand"
+	-sourceType "mel"
+	-command ("ViewAlongAxisNegativeZ")
+	ViewAlongAxisNegativeZNameCommand;
+
+nameCommand
+	-annotation "CameraModeOrthographicNameCommand"
+	-sourceType "mel"
+	-command ("CameraModeOrthographic")
+	CameraModeOrthographicNameCommand;
+
+nameCommand
+	-annotation "ToggleTimeSliderNameCommand"
+	-sourceType "mel"
+	-command ("ToggleTimeSlider")
+	ToggleTimeSliderNameCommand;
+
+nameCommand
+	-annotation "ToggleRangeSliderNameCommand"
+	-sourceType "mel"
+	-command ("ToggleRangeSlider")
+	ToggleRangeSliderNameCommand;
+
+nameCommand
+	-annotation "ToggleCommandLineNameCommand"
+	-sourceType "mel"
+	-command ("ToggleCommandLine")
+	ToggleCommandLineNameCommand;
+
+nameCommand
+	-annotation "ToggleToolboxNameCommand"
+	-sourceType "mel"
+	-command ("ToggleToolbox")
+	ToggleToolboxNameCommand;
+
+nameCommand
+	-annotation "CameraModePerspectiveNameCommand"
+	-sourceType "mel"
+	-command ("CameraModePerspective")
+	CameraModePerspectiveNameCommand;
+
+nameCommand
+	-annotation "dR_wireframeSmoothTGLNameCommand"
+	-sourceType "mel"
+	-command ("dR_wireframeSmoothTGL")
+	dR_wireframeSmoothTGLNameCommand;
+
+nameCommand
+	-annotation "DisplaySmoothShadedNameCommand"
+	-sourceType "mel"
+	-command ("DisplaySmoothShaded")
+	DisplaySmoothShadedNameCommand;
+
+nameCommand
+	-annotation "dR_selectAllNameCommand"
+	-sourceType "mel"
+	-command ("dR_selectAll")
+	dR_selectAllNameCommand;
+
+nameCommand
+	-annotation "SaveSceneAsNameCommand"
+	-sourceType "mel"
+	-command ("SaveSceneAs")
+	SaveSceneAsNameCommand;
+
+nameCommand
+	-annotation "TriangulateNameCommand"
+	-sourceType "mel"
+	-command ("Triangulate")
+	TriangulateNameCommand;
+
+nameCommand
+	-annotation "GridOptionsNameCommand"
+	-sourceType "mel"
+	-command ("GridOptions")
+	GridOptionsNameCommand;
+
+nameCommand
+	-annotation "PolygonCollapseNameCommand"
+	-sourceType "mel"
+	-command ("PolygonCollapse")
+	PolygonCollapseNameCommand;
+
+nameCommand
+	-annotation "PaintVertexColorToolOptionsNameCommand"
+	-sourceType "mel"
+	-command ("PaintVertexColorToolOptions")
+	PaintVertexColorToolOptionsNameCommand;
+
+nameCommand
+	-annotation "PlayblastOptionsNameCommand"
+	-sourceType "mel"
+	-command ("PlayblastOptions")
+	PlayblastOptionsNameCommand;
+
+nameCommand
+	-annotation "EPCurveToolNameCommand"
+	-sourceType "mel"
+	-command ("EPCurveTool")
+	EPCurveToolNameCommand;
+
+nameCommand
+	-annotation "PencilCurveToolNameCommand"
+	-sourceType "mel"
+	-command ("PencilCurveTool")
+	PencilCurveToolNameCommand;
+
+nameCommand
+	-annotation "ParentConstraintNameCommand"
+	-sourceType "mel"
+	-command ("ParentConstraint")
+	ParentConstraintNameCommand;
+
+nameCommand
+	-annotation "OrientConstraintNameCommand"
+	-sourceType "mel"
+	-command ("OrientConstraint")
+	OrientConstraintNameCommand;
+
+nameCommand
+	-annotation "IKHandleToolOptionsNameCommand"
+	-sourceType "mel"
+	-command ("IKHandleToolOptions")
+	IKHandleToolOptionsNameCommand;
+
+//
+// The user hotkeys
+//
+//
+// The hotkey set
+//
+hotkeySet -source "Maya_Default" -current myHots;
+//
+// The hotkey contexts and hotkeys
+//
+hotkey -keyShortcut "F2" -alt -sht -name ("CreatePolygonSphereOptionsNameCommand");
+hotkey -keyShortcut "n" -alt -name ("");
+hotkey -keyShortcut "3" -name ("SelectFacetMaskNameCommand");
+hotkey -keyShortcut "5" -ctl -name ("");
+hotkey -keyShortcut "6" -alt -name ("DisplaySmoothShadedNameCommand");
+hotkey -keyShortcut "a" -ctl -alt -name ("MatchTransformNameCommand");
+hotkey -keyShortcut "n" -name ("PencilCurveToolNameCommand");
+hotkey -keyShortcut "n" -releaseName ("");
+hotkey -keyShortcut "F4" -name ("ViewAlongAxisNegativeXNameCommand");
+hotkey -keyShortcut "t" -alt -name ("SmoothPolygonOptionsNameCommand");
+hotkey -keyShortcut "2" -ctl -name ("");
+hotkey -keyShortcut "4" -ctl -name ("");
+hotkey -keyShortcut "F5" -alt -name ("");
+hotkey -keyShortcut "7" -alt -name ("dR_wireframeSmoothTGLNameCommand");
+hotkey -keyShortcut ";" -name ("");
+hotkey -keyShortcut "r" -releaseName ("");
+hotkey -keyShortcut "r" -name ("ScaleToolNameCommand");
+hotkey -keyShortcut "x" -ctl -alt -name ("dR_viewXrayTGLNameCommand");
+hotkey -keyShortcut "t" -name ("ToolSettingsWindowNameCommand");
+hotkey -keyShortcut "v" -ctl -alt -sht -name ("PaintVertexColorToolOptionsNameCommand");
+hotkey -keyShortcut "w" -alt -sht -name ("");
+hotkey -keyShortcut "Left" -name ("PreviousFrameNameCommand");
+hotkey -keyShortcut "w" -ctl -sht -name ("MergeVertexToolNameCommand");
+hotkey -keyShortcut "y" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "f" -ctl -alt -sht -name ("FreezeTransformationsNameCommand");
+hotkey -keyShortcut "F9" -name ("RenderIntoNewWindowNameCommand");
+hotkey -keyShortcut "F12" -name ("SelectUVMaskNameCommand");
+hotkey -keyShortcut "q" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "s" -name ("ToggleShelfNameCommand");
+hotkey -keyShortcut "b" -ctl -alt -sht -name ("PlayblastOptionsNameCommand");
+hotkey -keyShortcut "e" -ctl -alt -name ("EPCurveToolNameCommand");
+hotkey -keyShortcut "1" -alt -name ("LowQualityDisplayNameCommand");
+hotkey -keyShortcut "." -alt -name ("");
+hotkey -keyShortcut "g" -ctl -alt -name ("GridOptionsNameCommand");
+hotkey -keyShortcut "k" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "F7" -name ("");
+hotkey -keyShortcut "t" -sht -name ("ToggleTimeSliderNameCommand");
+hotkey -keyShortcut "w" -ctl -alt -name ("PolyMergeNameCommand");
+hotkey -keyShortcut "p" -ctl -sht -name ("FillHoleNameCommand");
+hotkey -keyShortcut "c" -ctl -alt -sht -name ("dR_connectToolNameCommand");
+hotkey -keyShortcut "." -name ("");
+hotkey -keyShortcut "a" -ctl -name ("dR_selectAllNameCommand");
+hotkey -keyShortcut "F2" -name ("ViewAlongAxisNegativeYNameCommand");
+hotkey -keyShortcut "F10" -name ("RenderGlobalsWindowNameCommand");
+hotkey -keyShortcut "F3" -sht -name ("CreatePolygonCylinderNameCommand");
+hotkey -keyShortcut "," -alt -name ("");
+hotkey -keyShortcut "c" -alt -name ("dR_slideOffNameCommand");
+hotkey -keyShortcut "h" -ctl -sht -name ("HypershadeWindowNameCommand");
+hotkey -keyShortcut "F5" -sht -name ("CreatePolygonPlaneNameCommand");
+hotkey -keyShortcut "r" -ctl -alt -sht -name ("dR_outlinerTGLNameCommand");
+hotkey -keyShortcut "t" -ctl -alt -sht -name ("TriangulateNameCommand");
+hotkey -keyShortcut "p" -ctl -alt -name ("CenterPivotNameCommand");
+hotkey -keyShortcut "t" -ctl -name ("ToggleRangeSliderNameCommand");
+hotkey -keyShortcut "y" -name ("DisplayLayerEditorWindowNameCommand");
+hotkey -keyShortcut "!" -ctl -name ("");
+hotkey -keyShortcut "1" -ctl -alt -name ("ParentConstraintNameCommand");
+hotkey -keyShortcut "F1" -name ("ViewAlongAxisNegativeZNameCommand");
+hotkey -keyShortcut "1" -name ("SelectVertexMaskNameCommand");
+hotkey -keyShortcut "d" -ctl -alt -name ("SeparatePolygonNameCommand");
+hotkey -keyShortcut "F10" -ctl -name ("");
+hotkey -keyShortcut "z" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "o" -ctl -sht -name ("");
+hotkey -keyShortcut "b" -ctl -sht -name ("SmoothBindSkinOptionsNameCommand");
+hotkey -keyShortcut "F6" -sht -name ("CreatePolygonConeNameCommand");
+hotkey -keyShortcut "x" -alt -name ("dR_slideEdgeNameCommand");
+hotkey -keyShortcut "F4" -sht -name ("CreatePolygonPipeNameCommand");
+hotkey -keyShortcut "F2" -alt -name ("CameraModePerspectiveNameCommand");
+hotkey -keyShortcut "F8" -name ("IPRRenderIntoNewWindowNameCommand");
+hotkey -keyShortcut "i" -ctl -alt -sht -name ("ImportNameCommand");
+hotkey -keyShortcut "e" -releaseName ("");
+hotkey -keyShortcut "e" -name ("RotateToolNameCommand");
+hotkey -keyShortcut "c" -ctl -sht -name ("CombinePolygonsNameCommand");
+hotkey -keyShortcut "F1" -ctl -name ("");
+hotkey -keyShortcut "Space" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "m" -ctl -alt -sht -name ("MirrorPolygonGeometryOptionsNameCommand");
+hotkey -keyShortcut "v" -ctl -sht -name ("PolygonNormalEditToolNameCommand");
+hotkey -keyShortcut "Right" -name ("NextFrameNameCommand");
+hotkey -keyShortcut "l" -ctl -alt -sht -name ("CreateLocatorNameCommand");
+hotkey -keyShortcut "d" -ctl -name ("DuplicateFaceNameCommand");
+hotkey -keyShortcut "b" -alt -sht -name ("BridgeEdgeOptionsNameCommand");
+hotkey -keyShortcut "F1" -alt -name ("CameraModeToggleNameCommand");
+hotkey -keyShortcut "p" -alt -name ("");
+hotkey -keyShortcut "v" -alt -name ("");
+hotkey -keyShortcut "v" -releaseName ("");
+hotkey -keyShortcut "a" -ctl -alt -sht -name ("SelectHierarchyNameCommand");
+hotkey -keyShortcut "v" -name ("SnapToPointNameCommand");
+hotkey -keyShortcut "c" -alt -sht -name ("ConnectComponentsOptionsNameCommand");
+hotkey -keyShortcut "x" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "s" -ctl -alt -sht -name ("ExportSelectionNameCommand");
+hotkey -keyShortcut "5" -alt -name ("DisplayShadedNameCommand");
+hotkey -keyShortcut "r" -alt -sht -name ("ReversePolygonNormalsNameCommand");
+hotkey -keyShortcut "t" -alt -sht -name ("CreateBlendShapeNameCommand");
+hotkey -keyShortcut "r" -ctl -sht -name ("PrefixHierarchyNamesNameCommand");
+hotkey -keyShortcut "a" -releaseName ("");
+hotkey -keyShortcut "m" -name ("ToggleStatusLineNameCommand");
+hotkey -keyShortcut "l" -alt -name ("");
+hotkey -keyShortcut "h" -name ("ToggleVisibilityAndKeepSelectionNameCommand");
+hotkey -keyShortcut "a" -name ("MoveRotateScaleToolNameCommand");
+hotkey -keyShortcut "m" -releaseName ("");
+hotkey -keyShortcut "2" -alt -name ("MediumQualityDisplayNameCommand");
+hotkey -keyShortcut "t" -ctl -sht -name ("ToggleCommandLineNameCommand");
+hotkey -keyShortcut "g" -ctl -alt -sht -name ("GraphEditorNameCommand");
+hotkey -keyShortcut "l" -name ("LassoToolNameCommand");
+hotkey -keyShortcut "l" -releaseName ("");
+hotkey -keyShortcut "F1" -sht -name ("CreatePolygonCubeNameCommand");
+hotkey -keyShortcut "e" -ctl -alt -sht -name ("ScriptEditorNameCommand");
+hotkey -keyShortcut "c" -sht -releaseName ("");
+hotkey -keyShortcut "c" -sht -name ("CutUVsWithoutHotkeyNameCommand");
+hotkey -keyShortcut "r" -ctl -alt -name ("ReplaceObjectsNameCommand");
+hotkey -keyShortcut "t" -ctl -alt -name ("ToggleToolboxNameCommand");
+hotkey -keyShortcut ">" -ctl -name ("");
+hotkey -keyShortcut "F3" -alt -sht -name ("CreatePolygonCylinderOptionsNameCommand");
+hotkey -keyShortcut "d" -ctl -alt -sht -name ("BakeNonDefHistoryNameCommand");
+hotkey -keyShortcut "F5" -alt -sht -name ("CreatePolygonPlaneOptionsNameCommand");
+hotkey -keyShortcut "F2" -sht -name ("CreatePolygonSphereNameCommand");
+hotkey -keyShortcut "`" -alt -name ("SelectMultiComponentMaskNameCommand");
+hotkey -keyShortcut "!" -ctl -alt -name ("");
+hotkey -keyShortcut "p" -alt -sht -name ("MatchPivotsNameCommand");
+hotkey -keyShortcut "5" -name ("");
+hotkey -keyShortcut "F6" -name ("ViewAlongAxisZNameCommand");
+hotkey -keyShortcut "w" -releaseName ("");
+hotkey -keyShortcut "f" -ctl -alt -name ("FreezeTransformationsOptionsNameCommand");
+hotkey -keyShortcut "a" -ctl -sht -name ("SaveSceneAsNameCommand");
+hotkey -keyShortcut "w" -name ("MoveToolNameCommand");
+hotkey -keyShortcut "2" -name ("SelectEdgeMaskNameCommand");
+hotkey -keyShortcut "b" -ctl -alt -name ("BakeSimulationNameCommand");
+hotkey -keyShortcut "h" -alt -sht -name ("HotkeyPreferencesWindowNameCommand");
+hotkey -keyShortcut "Right" -sht -name ("");
+hotkey -keyShortcut "F8" -sht -name ("");
+hotkey -keyShortcut "k" -alt -name ("SetDrivenKeyOptionsNameCommand");
+hotkey -keyShortcut "u" -releaseName ("");
+hotkey -keyShortcut "u" -name ("TextureViewWindowNameCommand");
+hotkey -keyShortcut "F4" -alt -sht -name ("");
+hotkey -keyShortcut "e" -ctl -sht -name ("UntemplateObjectNameCommand");
+hotkey -keyShortcut "k" -name ("SetKeyNameCommand");
+hotkey -keyShortcut "a" -alt -sht -name ("AttributeEditorNameCommand");
+hotkey -keyShortcut "k" -releaseName ("");
+hotkey -keyShortcut "F3" -name ("ViewAlongAxisXNameCommand");
+hotkey -keyShortcut "x" -alt -sht -name ("");
+hotkey -keyShortcut "4" -alt -name ("DisplayWireframeNameCommand");
+hotkey -keyShortcut "w" -ctl -alt -sht -name ("PolyMergeOptionsNameCommand");
+hotkey -keyShortcut "s" -ctl -sht -name ("SplitEdgeRingToolNameCommand");
+hotkey -keyShortcut "d" -ctl -sht -name ("DetachComponentNameCommand");
+hotkey -keyShortcut "F7" -sht -name ("CreateNURBSSquareNameCommand");
+hotkey -keyShortcut "h" -sht -name ("");
+hotkey -keyShortcut "p" -ctl -alt -sht -name ("PreferencesWindowNameCommand");
+hotkey -keyShortcut "g" -ctl -sht -name ("UngroupNameCommand");
+hotkey -keyShortcut "F11" -name ("");
+hotkey -keyShortcut "c" -ctl -alt -name ("PolygonCollapseNameCommand");
+hotkey -keyShortcut "!" -name ("");
+hotkey -keyShortcut "e" -alt -sht -name ("TemplateObjectNameCommand");
+hotkey -keyShortcut "`" -ctl -alt -name ("CreateNURBSCircleNameCommand");
+hotkey -keyShortcut "3" -alt -name ("HighQualityDisplayNameCommand");
+hotkey -keyShortcut "h" -ctl -alt -sht -name ("DeleteHistoryNameCommand");
+hotkey -keyShortcut "v" -alt -sht -name ("");
+hotkey -keyShortcut "g" -alt -name ("ToggleGridNameCommand");
+hotkey -keyShortcut "/" -name ("PlaybackToggleNameCommand");
+hotkey -keyShortcut "/" -releaseName ("");
+hotkey -keyShortcut "F5" -name ("ViewAlongAxisYNameCommand");
+hotkey -keyShortcut "2" -ctl -alt -name ("OrientConstraintNameCommand");
+hotkey -keyShortcut "d" -alt -sht -name ("AddAttributeNameCommand");
+hotkey -keyShortcut "n" -ctl -alt -sht -name ("NodeEditorWindowNameCommand");
+hotkey -keyShortcut "4" -name ("SelectToggleModeNameCommand");
+hotkey -keyShortcut "F3" -alt -name ("CameraModeOrthographicNameCommand");
+hotkey -keyShortcut "F1" -alt -sht -name ("CreatePolygonCubeOptionsNameCommand");
+hotkey -keyShortcut "j" -ctl -name ("JointToolNameCommand");
+hotkey -keyShortcut "c" -ctl -name ("CopySelectedNameCommand");
+hotkey -keyShortcut "o" -ctl -alt -sht -name ("");
+hotkey -keyShortcut "3" -ctl -alt -name ("IKHandleToolOptionsNameCommand");
+hotkeyCtx -type "Editor" -addClient "timeEditorPanel";
+hotkey -keyShortcut "s" -name ("") -ctxClient "timeEditorPanel";
+hotkey -keyShortcut "k" -name ("TimeEditorSetKeyNameCommand");
+hotkey -keyShortcut "k" -releaseName ("") -ctxClient "timeEditorPanel";
+hotkeyCtx -type "Editor" -addClient "profilerPanel";
+hotkeyCtx -type "Editor" -addClient "hyperShadePanel";
+hotkey -keyShortcut "o" -alt -sht -name ("") -ctxClient "hyperShadePanel";
+hotkeyCtx -type "Editor" -addClient "hyperGraphPanel";
+hotkeyCtx -type "Editor" -addClient "posePanel";
+hotkeyCtx -type "Editor" -addClient "polyTexturePlacementPanel";
+hotkey -keyShortcut "4" -alt -name ("") -ctxClient "polyTexturePlacementPanel";
+hotkey -keyShortcut "4" -name ("") -ctxClient "polyTexturePlacementPanel";
+hotkeyCtx -type "Editor" -addClient "graphEditor";
+hotkeyCtx -type "Editor" -addClient "nodeEditorPanel";
+hotkeyCtx -type "Editor" -addClient "outlinerPanel";
+hotkey -keyShortcut "r" -name ("OutlinerToggleDAGOnlyNameCommand");
+hotkey -keyShortcut "h" -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "e" -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "k" -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "a" -ctl -alt -sht -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "l" -name ("OutlinerToggleShapesNameCommand");
+hotkey -keyShortcut "o" -ctl -alt -sht -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "t" -ctl -alt -sht -name ("") -ctxClient "outlinerPanel";
+hotkey -keyShortcut "Return" -name ("OutlinerRenameSelectedItemNameCommand");
+hotkey -keyShortcut "F2" -name ("") -ctxClient "outlinerPanel";
+hotkeyCtx -type "Editor" -addClient "shapePanel";
+hotkeyCtx -type "Tool" -addClient "texSculptCacheContext";
+hotkeyCtx -type "Tool" -addClient "Unfold3DBrush";
+hotkeyCtx -type "Tool" -addClient "sculptMeshCache";
+hotkey -keyShortcut "r" -alt -name ("SetMeshRelaxToolNameCommand");
+hotkey -keyShortcut "3" -ctl -name ("") -ctxClient "sculptMeshCache";
+hotkeyCtx -type "Tool" -addClient "xgmIGBrush";
+hotkeyCtx -type "Tool" -addClient "SymmetrizeUVBrush";
+hotkeyCtx -type "Tool" -addClient "texCutContext";
+hotkeyCtx -type "Tool" -addClient "polyCutUV";

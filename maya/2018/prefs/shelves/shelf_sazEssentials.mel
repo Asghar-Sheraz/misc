@@ -1,0 +1,2438 @@
+global proc shelf_sazEssentials () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Select an object(s)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Center Pivot" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ctrPvt" 
+        -overlayLabelColor 1 0.321 0.321 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconModify.png" 
+        -image1 "menuIconModify.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CenterPivot" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Orient joint options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "orientJointOptionItem" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "jntOri" 
+        -overlayLabelColor 1 0.321 0.321 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "orientJoint.png" 
+        -image1 "orientJoint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "OrientJointOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "cometJointOrient;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "JointOrient" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "jntOri" 
+        -overlayLabelColor 1 0.321 0.321 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cometJointOrient.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cometJointOrient.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "cometJointOrient;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Customize the joint scale" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Joint Size..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "jntSz" 
+        -overlayLabelColor 1 0.321 0.321 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "resizeWindow.png" 
+        -image1 "resizeWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "jdsWin" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Parent constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Parent" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "prtCons" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "parentConstraint.png" 
+        -image1 "parentConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doCreateParentConstraintArgList 1 { \"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Parent constraint options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "parentConstraintOptionItem" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "prtOpt" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "parentConstraint.png" 
+        -image1 "parentConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ParentConstraintOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "point constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Point" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "potConst" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "posConstraint.png" 
+        -image1 "posConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doCreatePointConstraintArgList 1 { \"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 33
+        -enable 1
+        -width 36
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Orient constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Orient" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "OntCons" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "orientConstraint.png" 
+        -image1 "orientConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doCreateOrientConstraintArgList 1 { \"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Aim constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Aim" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "aimConst" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "aimConstraint.png" 
+        -image1 "aimConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doCreateAimConstraintArgList 1 { \"0\",\"0\",\"0\",\"0\",\"1\",\"0\",\"0\",\"0\",\"1\",\"0\",\"0\",\"1\",\"0\",\"1\",\"vector\",\"\",\"0\",\"0\",\"0\",\"\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Pole vector constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Pole Vector" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "pole" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "poleVectorConstraint.png" 
+        -image1 "poleVectorConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "poleVectorConstraint -weight 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "IK spline handle tool options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "handleSplineDialogItem" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "splIK" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "kinSplineHandle.png" 
+        -image1 "kinSplineHandle.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "IKSplineHandleToolOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Point on poly constraint" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Point On Poly" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "LnkPnt" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pointOnPolyConstraint.png" 
+        -image1 "pointOnPolyConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doCreatePointOnPolyConstraintArgList 2 {   \"0\" ,\"0\" ,\"0\" ,\"1\" ,\"\" ,\"1\" ,\"0\" ,\"0\" ,\"0\" ,\"0\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "\n//======================================================================\n// Window Procedures\n//======================================================================\nglobal proc Quick_rename_tool ()\n  {//Quick_rename_toolWindow\n\n  if (`window -q -exists Quick_rename_toolWindow`) deleteUI Quick_rename_toolWindow;\n  \n  window -s 0 -title \"Quick_rename_tool\" -maximizeButton 0 -minimizeButton 1 Quick_rename_toolWindow;\n\n//======================================================================\n// Rename Tools\ncolumnLayout;\nrowColumnLayout -numberOfColumns 1 -columnWidth 1 313 ;\n//frameLayout -label \"Rename and Number\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\" ;\n\t\n  textFieldGrp -label \"Rename:\" -text \"\" -columnWidth 1 70 -columnWidth 2 235 KK_RenameRenameTFG;\n\t\t\t\nrowColumnLayout -numberOfColumns 2 -columnWidth 1 130 -columnWidth 2 170;\n\tintFieldGrp -label \"Start #:\" -v1 1 -columnWidth 1 68 -columnWidth 2 60 KK_RenameStartIFG;\n\tintFieldGrp -label \"Padding:\" -v1 2 -columnWidth 1 64 -columnWidth 2 60 KK_RenamePaddingIFG;\nsetParent..;\n\trowColumnLayout -numberOfColumns 1 -columnWidth 1 306 ;\n\tbutton -h 23 -w 100 -l \"Rename and Number\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(3)\";\nsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n\t\t\t\n//======================================================================\n// Remove\n//frameLayout -label \"Simple rename\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\t\nrowColumnLayout -numberOfColumns 3 -cs 1 10 -cs 3 4 -columnWidth 1 84 -columnWidth 2 104 -columnWidth 3 104;\n\ttext -label \"Remove...\" -align \"left\";\n\tbutton -h 23 -w 60 -l \"First Character-->\" -bgc 0.1 0.2 0.2 -c \"remove_FirstChr()\";\n\tbutton -h 23 -w 60 -l \"<--Last Character\" -bgc 0.1 0.2 0.2 -c \"remove_LastChr()\";\nsetParent..;\n\t\t\t\t\nrowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 70 -columnWidth 2 170 -columnWidth 3 56;\n\ttext -l \" Hash Rename:\";\n\ttextFieldGrp -label \"\" -text \"name_####_suffix\" -columnWidth 1 10 -columnWidth 2 153 Rename_js_hashRenameTFG;\n\tbutton -h 23 -w 48 -l \"Rename\" -bgc 0.1 0.2 0.2 -c \"Rename_js_hashRename_MainProc()\"; \n\tsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n//======================================================================\n// Prefix - Suffix\n\t//frameLayout -label \" Add prefix or suffix\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\n\t//text -l \"\" -h 1;\n\trowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 55 -columnWidth 2 185 -columnWidth 3 56;\n\ttext -l \"(Before)\";\n\ttextFieldGrp -label \"\" -text \"prefix_\" -columnWidth 1 10 -columnWidth 2 168 prefixTFG;\n\tbutton -h 21 -l \"Add\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(1)\";\nsetParent..;\n\ntext -l \"\" -h 1;\n\trowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 55 -columnWidth 2 185 -columnWidth 3 56;\n\ttext -l \"(After)\";\n\ttextFieldGrp -label \"\" -text \"_suffix\" -columnWidth 1 10 -columnWidth 2 168 suffixTFG;\n\tbutton -h 21 -l \"Add\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(2)\";\nsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n//======================================================================\n// Quick suffix\n//frameLayout -label \" Add quick suffix\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\t\nrowColumnLayout -numberOfColumns 5 -columnWidth 1 61 -columnWidth 2 61 -columnWidth 3 61 -columnWidth 4 61 -columnWidth 5 62;\n\tbutton -l \"grp\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _grp\";\n\tbutton -l \"geo\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _geo\";\n\tbutton -l \"ctl\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _ctl\";\n\tbutton -l \"jnt\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _jnt\";\n\tbutton -l \"drv\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _drv\";\n\tsetParent ..;\nseparator -style \"in\" -w 315 ;       \n        \n\n//======================================================================\n// Search and Replace \n//frameLayout -label \"Search and Replace\"  -bgc 0.25 0.25 0.25 -w 311 -fn \"tinyBoldLabelFont\";\nrowColumnLayout -numberOfColumns 1 -columnWidth 1 313 ;\t\n\ttextFieldGrp -label \"Search:\" -text \"pasted_\" -columnWidth 1 70 -columnWidth 2 233 SearchAndReplace_SearchTFG;\n\ttextFieldGrp -label \"Replace:\" -text \"\" -columnWidth 1 70 -columnWidth 2 233 SearchAndReplace_ReplaceTFG;\n\tradioButtonGrp -bgc 0.25 0.25 0.25 -numberOfRadioButtons 3 -label \"\" -sl 1 -labelArray3 \"Hierarchy\" \"Selected\" \"All\" -columnWidth 1 30 SearchAndReplace_OptionRBG;\n\trowColumnLayout -numberOfColumns 1 -columnWidth 1 305 ;\n\tbutton  -h 23 -w 40-l \"Apply\" -bgc 0.1 0.2 0.2 -c \"SearchAndRename()\";\n\tsetParent..;\nsetParent..;\n\nwindow -e -wh 313 302 Quick_rename_toolWindow;\nshowWindow Quick_rename_toolWindow;\n\n}//Quick_rename_tool_Window\n\n//======================================================================\n//======================================================================\n// ---->  Remove Last character <----\n//======================================================================\n//======================================================================\n\nglobal proc remove_LastChr()\n{//remove_LastChr\n\n\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\tint $stringSize = size($myObj);\n\n\t\t\n\t\tif ($stringSize > 1) \n\t\t{\n\t\t\tstring $newName = `substring $myObj 1 ($stringSize - 1)`;\n\t\t\trename $obj $newName;\n\t\t}\n\t}\t\n}//remove_LastChr\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Remove First character <----\n//======================================================================\n//======================================================================\n\nglobal proc remove_FirstChr()\n{//remove_FirstChr\n\n\t\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\tint $stringSize = size($myObj);\n\t\t\n\t\tif ($stringSize > 1) \n\t\t{\n\t\t\tstring $newName = `substring $myObj 2 $stringSize`;\n\t\t\trename $obj $newName;\n\t\t}\n\t}\n}//remove_FirstChr\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Rename Selected Shapes <----\n//======================================================================\n//======================================================================\n\nglobal proc KK_RenameSelectedShape()\n{//KK_RenameSelectedShape\n\tstring $objects[] = `ls -sl`;\n\n\tstring $objTransform;\n\tfor ($objTransform in $objects)\n\t{\n\t\n\t\tstring $shapes[] = `listRelatives -s -f $objTransform`;\n\t\t\n\t\tstring $pathTransNodes[];\n\t\tint $numTokens = tokenize($objTransform, \"|\", $pathTransNodes);\n\t\tstring $myTransObj = $pathTransNodes[$numTokens - 1];\n\t\t\n\t\tstring $obj;\n\t\tint $num = 1;\n\t\t\n\t\tfor ($obj in $shapes)\n\t\t{\n\t\t\tstring $newShapeName = ($myTransObj + \"_Shape\" + $num);\n\t\t\trename $obj $newShapeName;\n\t\t\t$num += 1;\n\t\t}\n\t}\n}//KK_RenameSelectedShape\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Search and Rename <----\n//======================================================================\n//======================================================================\n\nglobal proc SearchAndRename()\n{\n    string $search = `textFieldGrp -q -tx SearchAndReplace_SearchTFG`;\n\tstring $replace = `textFieldGrp -q -tx SearchAndReplace_ReplaceTFG`;\n\tstring $options = `radioButtonGrp -q -sl SearchAndReplace_OptionRBG`;\n\t\n\tif ($options == 1)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"hierarchy\";\n\t}\n\t\n\telse if ($options == 2)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"selected\";\n\t}\n\t\n\telse if ($options == 3)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"all\";\n\t}\n}\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Quick suffix <----\n//======================================================================\n//======================================================================\n\nglobal proc quickSuffix(string $suffix)\n{//quickSuffix\n\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\trename $obj ($myObj + $suffix);\n\t}\n}//quickSuffix\n\n//======================================================================\n//======================================================================\n// ---->  hashRename\n//======================================================================\n//======================================================================\n\nglobal proc Rename_js_hashRename_MainProc()\n{\n\n    string $search = `textFieldGrp -q -tx Rename_js_hashRenameTFG`;\n    \n    if ($search != \"\")\n    {\n\t\tevalEcho (\"Rename_js_hashRename \\\"\" + $search + \"\\\"\");\n    }\n}\n\n\n\nglobal proc string Rename_js_replaceHash (string $string, int $number)\n{\n\n    string $result;\n    // we want to replace the #'s in the name with the $number.\n\n    string $substring = \"#+\";\n    $substring = `match $substring $string`;\n\n    // $substring is now the number of #'s\n    string $substringNum = substituteAllString($substring, \"#\", \"0\");\n    // now add the number at the end\n    string $numString = $number;\n\n    string $newString = ($substringNum + $numString);\n\n    // now strip away the start numbers so we only have the num left\n    int $fullSize =`size($newString)`;\n    int $numSize = `size($numString)`;\n    if ($numSize < size($substringNum))\n    {\n        $numSize = $numSize+1;\n        $numString = `substring $newString $numSize $fullSize`;\n    } \n    $result = `substitute $substring $string $numString`;\n    return $result;\n}\n\n\n\nglobal proc string[] Rename_js_hashRename (string $newName)\n{\n    // this procedure will rename the selected objects with $newName, and it will replace the # with a count.  It will zero-pad with the\n    // number of hashes\n\n    string $objs[0];\n    int $count = 0;\n    string $return[0];\n\n    $objs = `ls -sl`;\n\n    if (size($objs) > 0)\n    {\n        // create a dummy node for keeping track of all the objects.  when we rename them, it may change the object's\n        // names, which could get confusing for maya.\n        $node = `createNode unknown`;\n        addAttr -ln \"selObjects\" -at message -multi -im 0;\n\n        for ($obj in $objs)\n        {\n            // connect the attributes\n            connectAttr -na ($obj + \".message\") ($node + \".selObjects\");\n        }\n        \n        $con = `listConnections ($node + \".selObjects\")`;\n       \n        for ($x = 0; $x < size($con); $x++)\n        {\n            string $tmp[0];\n            $tmp = `listConnections ($node + \".selObjects[\"+$x+\"]\")`;\n            string $object = $tmp[0];\n      \n            // check the searchString for the #'s.  Based on the number of hashes, we'll replace them with the index number\n            $name = `Rename_js_replaceHash $newName ($x + 1)`;\n\n            // rename the object\n            $result = `rename $object $name`;\n            \n            print (\"// Renamed: \" + $object + \" --> \" + $result + \"\\n\");\n        } \n        $return = `listConnections ($node + \".selObjects\")`;\n        delete $node;\n\n    }\n    if ((`size $return`) > 0)\n        select $return;\n    return $return;\n}\n\n//======================================================================\n//======================================================================\n// ---->  cometRename.mel  procedures\n//======================================================================\n//======================================================================\n\n\n/*\n \n */\nproc string getShortName(string $obj)\n{\n    string $ret = \"\";\n    \n    if ($obj == \"\")\n        return $ret;\n        \n    string $parts[];\n    int $cnt = tokenize($obj, \"|\", $parts);\n    \n    if ($cnt <= 0)\n        $ret = $obj;\n    else\n        $ret = $parts[($cnt-1)];\n    \n    return $ret;\n}\n\n// --------------------------------------------------------------------------\n\nproc string chop(string $str)\n{\n    string $ret = \"\";\n\n    int $cnt = size($str);\n    \n    if ($cnt <= 1)\n        return $ret;\n    \n    $ret = `substring $str 1 ($cnt-1)`;\n\n    return $ret;\n}\n\n// --------------------------------------------------------------------------\n\nglobal proc Rename_KK_Kename(int $mode)\n{//Rename_KK_Kename\n    string $objs[] = `ls -sl -long`;\n    int $objCnt = size($objs);\n    int $i;\n\n\t// Get all UI data...\n\t//\n    string $prefix = `textFieldGrp -q -tx prefixTFG`;\n    string $suffix = `textFieldGrp -q -tx suffixTFG`;\n    string $rename = `textFieldGrp -q -tx KK_RenameRenameTFG`;\n    int $start = `intFieldGrp -q -v1 KK_RenameStartIFG`;\n    int $padding = `intFieldGrp -q -v1 KK_RenamePaddingIFG`;\n    \n    string $shortName;\n    string $newShortName;\n    string $newName;\n\n\t// Now do it\n\t//\n    for ($i=0; $i < $objCnt; ++$i)\n        {\n\t$obj = $objs[$i];\n\t\n\t$shortName = getShortName($obj);\n\t\t\n\tswitch ($mode)\n\t    {\n\t    case 1:\n\t        if ($prefix == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't add prefix, prefix entry field is blank!\");\n\t            return;\n\t    \t    }\n\t        $newShortName = ($prefix + $shortName);\n\t        break;\n\n\t    case 2:\n\t        if ($suffix == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't add suffix, suffix entry field is blank!\");\n\t            return;\n\t    \t    }\n\t        $newShortName = ($shortName + $suffix);\n\t        break;\n\n\t    case 3:\n\t        if ($rename == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't rename and number, rename entry field is blank!\");\n\t            return;\n\t            }\n\t    \t\t// get index of string as user wants\n\t    \tint $n = $i + $start;\n\t    \t\t// pad of 0's\n\t    \tstring $padStr = \"\";\n\t    \t\n\t    \t\t// Add padding as needed\n\t    \tfor ($p=1; $p < $padding; ++$p)\n\t    \t{\n\t\t\t\tif ($n < pow(10, $p) )\n\t\t\t\t\t$padStr += \"0\";\n\t\t    }\n\t    \t\n\t    \t$newShortName = ($rename+$padStr+$n);\n\t        break;\n\n\t    } // end of switch\n\t\n\t\n\t$newName = `rename $obj $newShortName`;\n\tselect -r $newName;\n\tstring $newLongNames[] = `ls -sl -long`;\n\tstring $newLongName = $newLongNames[0];\n\t\n\t    // Now update rest of stuff in list in case |long|names\n\t    // required it\n\tfor ($j=0; $j < $objCnt; ++$j)\n\t    {\n\t    string $tmp = $objs[$j];\n\n\t    $tmp += \"|\";\t// add to end for easy replacing\n\t    $tmp = `substitute ($obj+\"|\") $tmp (\"|\"+$newLongName+\"|\")`;\n\t    $tmp = chop($tmp);\n\t    \n\t    $objs[$j] = $tmp;\n\t    }\n\t\n\n\t}  // end of for all objs\n\n    select $objs;\n}//Rename_KK_Kename\n\n//--------------------------\n//--------------------------\n\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "\n//=============================================================..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "\n//======================================================================\n// Window Procedures\n//======================================================================\nglobal proc Quick_rename_tool ()\n  {//Quick_rename_toolWindow\n\n  if (`window -q -exists Quick_rename_toolWindow`) deleteUI Quick_rename_toolWindow;\n  \n  window -s 0 -title \"Quick_rename_tool\" -maximizeButton 0 -minimizeButton 1 Quick_rename_toolWindow;\n\n//======================================================================\n// Rename Tools\ncolumnLayout;\nrowColumnLayout -numberOfColumns 1 -columnWidth 1 313 ;\n//frameLayout -label \"Rename and Number\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\" ;\n\t\n  textFieldGrp -label \"Rename:\" -text \"\" -columnWidth 1 70 -columnWidth 2 235 KK_RenameRenameTFG;\n\t\t\t\nrowColumnLayout -numberOfColumns 2 -columnWidth 1 130 -columnWidth 2 170;\n\tintFieldGrp -label \"Start #:\" -v1 1 -columnWidth 1 68 -columnWidth 2 60 KK_RenameStartIFG;\n\tintFieldGrp -label \"Padding:\" -v1 2 -columnWidth 1 64 -columnWidth 2 60 KK_RenamePaddingIFG;\nsetParent..;\n\trowColumnLayout -numberOfColumns 1 -columnWidth 1 306 ;\n\tbutton -h 23 -w 100 -l \"Rename and Number\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(3)\";\nsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n\t\t\t\n//======================================================================\n// Remove\n//frameLayout -label \"Simple rename\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\t\nrowColumnLayout -numberOfColumns 3 -cs 1 10 -cs 3 4 -columnWidth 1 84 -columnWidth 2 104 -columnWidth 3 104;\n\ttext -label \"Remove...\" -align \"left\";\n\tbutton -h 23 -w 60 -l \"First Character-->\" -bgc 0.1 0.2 0.2 -c \"remove_FirstChr()\";\n\tbutton -h 23 -w 60 -l \"<--Last Character\" -bgc 0.1 0.2 0.2 -c \"remove_LastChr()\";\nsetParent..;\n\t\t\t\t\nrowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 70 -columnWidth 2 170 -columnWidth 3 56;\n\ttext -l \" Hash Rename:\";\n\ttextFieldGrp -label \"\" -text \"name_####_suffix\" -columnWidth 1 10 -columnWidth 2 153 Rename_js_hashRenameTFG;\n\tbutton -h 23 -w 48 -l \"Rename\" -bgc 0.1 0.2 0.2 -c \"Rename_js_hashRename_MainProc()\"; \n\tsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n//======================================================================\n// Prefix - Suffix\n\t//frameLayout -label \" Add prefix or suffix\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\n\t//text -l \"\" -h 1;\n\trowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 55 -columnWidth 2 185 -columnWidth 3 56;\n\ttext -l \"(Before)\";\n\ttextFieldGrp -label \"\" -text \"prefix_\" -columnWidth 1 10 -columnWidth 2 168 prefixTFG;\n\tbutton -h 21 -l \"Add\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(1)\";\nsetParent..;\n\ntext -l \"\" -h 1;\n\trowColumnLayout -numberOfColumns 3 -cs 1 10 -columnWidth 1 55 -columnWidth 2 185 -columnWidth 3 56;\n\ttext -l \"(After)\";\n\ttextFieldGrp -label \"\" -text \"_suffix\" -columnWidth 1 10 -columnWidth 2 168 suffixTFG;\n\tbutton -h 21 -l \"Add\" -bgc 0.1 0.2 0.2 -c \"Rename_KK_Kename(2)\";\nsetParent..;\nseparator -style \"in\" -w 315 ;\n\t\n//======================================================================\n// Quick suffix\n//frameLayout -label \" Add quick suffix\"  -bgc 0.25 0.25 0.25 -w 313 -fn \"tinyBoldLabelFont\";\t\nrowColumnLayout -numberOfColumns 5 -columnWidth 1 61 -columnWidth 2 61 -columnWidth 3 61 -columnWidth 4 61 -columnWidth 5 62;\n\tbutton -l \"grp\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _grp\";\n\tbutton -l \"geo\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _geo\";\n\tbutton -l \"ctl\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _ctl\";\n\tbutton -l \"jnt\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _jnt\";\n\tbutton -l \"drv\" -bgc 0.1 0.2 0.2 -c \"quickSuffix _drv\";\n\tsetParent ..;\nseparator -style \"in\" -w 315 ;       \n        \n\n//======================================================================\n// Search and Replace \n//frameLayout -label \"Search and Replace\"  -bgc 0.25 0.25 0.25 -w 311 -fn \"tinyBoldLabelFont\";\nrowColumnLayout -numberOfColumns 1 -columnWidth 1 313 ;\t\n\ttextFieldGrp -label \"Search:\" -text \"pasted_\" -columnWidth 1 70 -columnWidth 2 233 SearchAndReplace_SearchTFG;\n\ttextFieldGrp -label \"Replace:\" -text \"\" -columnWidth 1 70 -columnWidth 2 233 SearchAndReplace_ReplaceTFG;\n\tradioButtonGrp -bgc 0.25 0.25 0.25 -numberOfRadioButtons 3 -label \"\" -sl 1 -labelArray3 \"Hierarchy\" \"Selected\" \"All\" -columnWidth 1 30 SearchAndReplace_OptionRBG;\n\trowColumnLayout -numberOfColumns 1 -columnWidth 1 305 ;\n\tbutton  -h 23 -w 40-l \"Apply\" -bgc 0.1 0.2 0.2 -c \"SearchAndRename()\";\n\tsetParent..;\nsetParent..;\n\nwindow -e -wh 313 302 Quick_rename_toolWindow;\nshowWindow Quick_rename_toolWindow;\n\n}//Quick_rename_tool_Window\n\n//======================================================================\n//======================================================================\n// ---->  Remove Last character <----\n//======================================================================\n//======================================================================\n\nglobal proc remove_LastChr()\n{//remove_LastChr\n\n\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\tint $stringSize = size($myObj);\n\n\t\t\n\t\tif ($stringSize > 1) \n\t\t{\n\t\t\tstring $newName = `substring $myObj 1 ($stringSize - 1)`;\n\t\t\trename $obj $newName;\n\t\t}\n\t}\t\n}//remove_LastChr\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Remove First character <----\n//======================================================================\n//======================================================================\n\nglobal proc remove_FirstChr()\n{//remove_FirstChr\n\n\t\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\tint $stringSize = size($myObj);\n\t\t\n\t\tif ($stringSize > 1) \n\t\t{\n\t\t\tstring $newName = `substring $myObj 2 $stringSize`;\n\t\t\trename $obj $newName;\n\t\t}\n\t}\n}//remove_FirstChr\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Rename Selected Shapes <----\n//======================================================================\n//======================================================================\n\nglobal proc KK_RenameSelectedShape()\n{//KK_RenameSelectedShape\n\tstring $objects[] = `ls -sl`;\n\n\tstring $objTransform;\n\tfor ($objTransform in $objects)\n\t{\n\t\n\t\tstring $shapes[] = `listRelatives -s -f $objTransform`;\n\t\t\n\t\tstring $pathTransNodes[];\n\t\tint $numTokens = tokenize($objTransform, \"|\", $pathTransNodes);\n\t\tstring $myTransObj = $pathTransNodes[$numTokens - 1];\n\t\t\n\t\tstring $obj;\n\t\tint $num = 1;\n\t\t\n\t\tfor ($obj in $shapes)\n\t\t{\n\t\t\tstring $newShapeName = ($myTransObj + \"_Shape\" + $num);\n\t\t\trename $obj $newShapeName;\n\t\t\t$num += 1;\n\t\t}\n\t}\n}//KK_RenameSelectedShape\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Search and Rename <----\n//======================================================================\n//======================================================================\n\nglobal proc SearchAndRename()\n{\n    string $search = `textFieldGrp -q -tx SearchAndReplace_SearchTFG`;\n\tstring $replace = `textFieldGrp -q -tx SearchAndReplace_ReplaceTFG`;\n\tstring $options = `radioButtonGrp -q -sl SearchAndReplace_OptionRBG`;\n\t\n\tif ($options == 1)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"hierarchy\";\n\t}\n\t\n\telse if ($options == 2)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"selected\";\n\t}\n\t\n\telse if ($options == 3)\n\t{\n\t\t\tsearchReplaceNames $search $replace \"all\";\n\t}\n}\n\n\n\n//======================================================================\n//======================================================================\n// ---->  Quick suffix <----\n//======================================================================\n//======================================================================\n\nglobal proc quickSuffix(string $suffix)\n{//quickSuffix\n\n\tstring $jointSelected[0]= `ls -sl -long`;\n\tint $jointSelectedSize = size($jointSelected);\n\n\tfor ($i=$jointSelectedSize-1; $i >= 0; $i--)\n\t{\n\t\tstring $obj = $jointSelected[$i];\n\t\n\t\tstring $pathNodes[];\n\t\tint $numTokens = tokenize($obj, \"|\", $pathNodes);\n\t\tstring $myObj = $pathNodes[$numTokens - 1];\n\t\t\n\t\trename $obj ($myObj + $suffix);\n\t}\n}//quickSuffix\n\n//======================================================================\n//======================================================================\n// ---->  hashRename\n//======================================================================\n//======================================================================\n\nglobal proc Rename_js_hashRename_MainProc()\n{\n\n    string $search = `textFieldGrp -q -tx Rename_js_hashRenameTFG`;\n    \n    if ($search != \"\")\n    {\n\t\tevalEcho (\"Rename_js_hashRename \\\"\" + $search + \"\\\"\");\n    }\n}\n\n\n\nglobal proc string Rename_js_replaceHash (string $string, int $number)\n{\n\n    string $result;\n    // we want to replace the #'s in the name with the $number.\n\n    string $substring = \"#+\";\n    $substring = `match $substring $string`;\n\n    // $substring is now the number of #'s\n    string $substringNum = substituteAllString($substring, \"#\", \"0\");\n    // now add the number at the end\n    string $numString = $number;\n\n    string $newString = ($substringNum + $numString);\n\n    // now strip away the start numbers so we only have the num left\n    int $fullSize =`size($newString)`;\n    int $numSize = `size($numString)`;\n    if ($numSize < size($substringNum))\n    {\n        $numSize = $numSize+1;\n        $numString = `substring $newString $numSize $fullSize`;\n    } \n    $result = `substitute $substring $string $numString`;\n    return $result;\n}\n\n\n\nglobal proc string[] Rename_js_hashRename (string $newName)\n{\n    // this procedure will rename the selected objects with $newName, and it will replace the # with a count.  It will zero-pad with the\n    // number of hashes\n\n    string $objs[0];\n    int $count = 0;\n    string $return[0];\n\n    $objs = `ls -sl`;\n\n    if (size($objs) > 0)\n    {\n        // create a dummy node for keeping track of all the objects.  when we rename them, it may change the object's\n        // names, which could get confusing for maya.\n        $node = `createNode unknown`;\n        addAttr -ln \"selObjects\" -at message -multi -im 0;\n\n        for ($obj in $objs)\n        {\n            // connect the attributes\n            connectAttr -na ($obj + \".message\") ($node + \".selObjects\");\n        }\n        \n        $con = `listConnections ($node + \".selObjects\")`;\n       \n        for ($x = 0; $x < size($con); $x++)\n        {\n            string $tmp[0];\n            $tmp = `listConnections ($node + \".selObjects[\"+$x+\"]\")`;\n            string $object = $tmp[0];\n      \n            // check the searchString for the #'s.  Based on the number of hashes, we'll replace them with the index number\n            $name = `Rename_js_replaceHash $newName ($x + 1)`;\n\n            // rename the object\n            $result = `rename $object $name`;\n            \n            print (\"// Renamed: \" + $object + \" --> \" + $result + \"\\n\");\n        } \n        $return = `listConnections ($node + \".selObjects\")`;\n        delete $node;\n\n    }\n    if ((`size $return`) > 0)\n        select $return;\n    return $return;\n}\n\n//======================================================================\n//======================================================================\n// ---->  cometRename.mel  procedures\n//======================================================================\n//======================================================================\n\n\n/*\n \n */\nproc string getShortName(string $obj)\n{\n    string $ret = \"\";\n    \n    if ($obj == \"\")\n        return $ret;\n        \n    string $parts[];\n    int $cnt = tokenize($obj, \"|\", $parts);\n    \n    if ($cnt <= 0)\n        $ret = $obj;\n    else\n        $ret = $parts[($cnt-1)];\n    \n    return $ret;\n}\n\n// --------------------------------------------------------------------------\n\nproc string chop(string $str)\n{\n    string $ret = \"\";\n\n    int $cnt = size($str);\n    \n    if ($cnt <= 1)\n        return $ret;\n    \n    $ret = `substring $str 1 ($cnt-1)`;\n\n    return $ret;\n}\n\n// --------------------------------------------------------------------------\n\nglobal proc Rename_KK_Kename(int $mode)\n{//Rename_KK_Kename\n    string $objs[] = `ls -sl -long`;\n    int $objCnt = size($objs);\n    int $i;\n\n\t// Get all UI data...\n\t//\n    string $prefix = `textFieldGrp -q -tx prefixTFG`;\n    string $suffix = `textFieldGrp -q -tx suffixTFG`;\n    string $rename = `textFieldGrp -q -tx KK_RenameRenameTFG`;\n    int $start = `intFieldGrp -q -v1 KK_RenameStartIFG`;\n    int $padding = `intFieldGrp -q -v1 KK_RenamePaddingIFG`;\n    \n    string $shortName;\n    string $newShortName;\n    string $newName;\n\n\t// Now do it\n\t//\n    for ($i=0; $i < $objCnt; ++$i)\n        {\n\t$obj = $objs[$i];\n\t\n\t$shortName = getShortName($obj);\n\t\t\n\tswitch ($mode)\n\t    {\n\t    case 1:\n\t        if ($prefix == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't add prefix, prefix entry field is blank!\");\n\t            return;\n\t    \t    }\n\t        $newShortName = ($prefix + $shortName);\n\t        break;\n\n\t    case 2:\n\t        if ($suffix == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't add suffix, suffix entry field is blank!\");\n\t            return;\n\t    \t    }\n\t        $newShortName = ($shortName + $suffix);\n\t        break;\n\n\t    case 3:\n\t        if ($rename == \"\")\n\t            {\n\t            warning -sl 0 (\"Can't rename and number, rename entry field is blank!\");\n\t            return;\n\t            }\n\t    \t\t// get index of string as user wants\n\t    \tint $n = $i + $start;\n\t    \t\t// pad of 0's\n\t    \tstring $padStr = \"\";\n\t    \t\n\t    \t\t// Add padding as needed\n\t    \tfor ($p=1; $p < $padding; ++$p)\n\t    \t{\n\t\t\t\tif ($n < pow(10, $p) )\n\t\t\t\t\t$padStr += \"0\";\n\t\t    }\n\t    \t\n\t    \t$newShortName = ($rename+$padStr+$n);\n\t        break;\n\n\t    } // end of switch\n\t\n\t\n\t$newName = `rename $obj $newShortName`;\n\tselect -r $newName;\n\tstring $newLongNames[] = `ls -sl -long`;\n\tstring $newLongName = $newLongNames[0];\n\t\n\t    // Now update rest of stuff in list in case |long|names\n\t    // required it\n\tfor ($j=0; $j < $objCnt; ++$j)\n\t    {\n\t    string $tmp = $objs[$j];\n\n\t    $tmp += \"|\";\t// add to end for easy replacing\n\t    $tmp = `substitute ($obj+\"|\") $tmp (\"|\"+$newLongName+\"|\")`;\n\t    $tmp = chop($tmp);\n\t    \n\t    $objs[$j] = $tmp;\n\t    }\n\t\n\n\t}  // end of for all objs\n\n    select $objs;\n}//Rename_KK_Kename\n\n//--------------------------\n//--------------------------\n\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Create a cluster for the selected object(s)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Cluster" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "cluster" 
+        -overlayLabelColor 0.8733 0.4509 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "cluster.png" 
+        -image1 "cluster.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateCluster" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Add attribute" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Add Attribute..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "attEdt" 
+        -overlayLabelColor 1 0.8048 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconModify.png" 
+        -image1 "menuIconModify.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "AddAttribute" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Rename attribute" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Edit Attribute..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "attRnm" 
+        -overlayLabelColor 1 0.8048 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconModify.png" 
+        -image1 "menuIconModify.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "RenameAttribute" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Edit expressions between attributes" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Expression Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "EE" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconWindow.png" 
+        -image1 "menuIconWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ExpressionEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Make connections between object attributes" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Connection Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ConnEd" 
+        -overlayLabelColor 1 0.8048 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconWindow.png" 
+        -image1 "menuIconWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ConnectionEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Set driven key options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setDrivenKey" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Set.Drv" 
+        -overlayLabelColor 1 0.8048 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconKeys.png" 
+        -image1 "menuIconKeys.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetDrivenKeyOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle face normal visibility" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Face Normals" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "faceNr" 
+        -overlayLabelColor 0 0.65385 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconDisplay.png" 
+        -image1 "menuIconDisplay.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ToggleFaceNormalDisplay" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle vertex normal visibility" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Vertex Normals" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "vertNr" 
+        -overlayLabelColor 0 0.65385 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconDisplay.png" 
+        -image1 "menuIconDisplay.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ToggleVertexNormalDisplay" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Vertex normal edit tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Vertex Normal Edit Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "norAdj" 
+        -overlayLabelColor 0 0.65385 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "vertexNormalEdit.png" 
+        -image1 "vertexNormalEdit.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "PolygonNormalEditTool" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Set the normals of selected vertices or vertex-faces within a specified distance of each other to their average" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Average" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "avgNor" 
+        -overlayLabelColor 0 0.65385 1 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyNormalAverage.png" 
+        -image1 "polyNormalAverage.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyAverageNormal -prenormalize 1 -allowZeroNormal 0 -postnormalize 0 -distance 0.1 -replaceNormalXYZ 1 0 0 " 
+        -sourceType "mel" 
+        -doubleClickCommand "AveragePolygonNormalsOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Delete modeling history on the selected object(s)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Non-Deformer History" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NDHis" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconEdit.png" 
+        -image1 "menuIconEdit.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "BakeNonDefHistory" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Change the selected faces into triangles" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Triangulate" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Tri" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyTriangulate.png" 
+        -image1 "polyTriangulate.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyPerformAction polyTriangulate f 0" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "\ncometRename;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "rename" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "rename" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cometRename.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cometRename.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "\ncometRename;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Adjust clipping planes for camera in the active viewport" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Adjust Clipping Planes..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ACP" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "bonusTools.png" 
+        -image1 "bonusTools.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "bt_adjustClipPlanes" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Paint skin weights tool options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "skinWeightPaintDialogItem" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "paintSkinWeights.png" 
+        -image1 "paintSkinWeights.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ArtPaintSkinWeightsToolOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Paint a specified color value and alpha on polygon vertices" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Paint Vertex Color Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "paintVertexColour.png" 
+        -image1 "paintVertexColour.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "PaintVertexColorTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "PaintVertexColorToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle Display Colors attribute of the selected objects" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Toggle Display Colors Attribute" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "clrVert" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyToggleDisplayColor.png" 
+        -image1 "polyToggleDisplayColor.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "toggleShadeMode" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Measure distance between two points" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Distance Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "distanceDim.png" 
+        -image1 "distanceDim.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "DistanceTool" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Create a NURBS circle on the grid" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Circle" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "circle.png" 
+        -image1 "circle.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "circle -c 0 0 0 -nr 0 1 0 -sw 360 -r 1 -d 3 -ut 0 -tol 0.01 -s 8 -ch 1; objectMoveCommand" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateNURBSCircleOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Extrude options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Extrude Options" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "extrude.png" 
+        -image1 "extrude.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ExtrudeOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Convert edges to nurbs curves." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Polygon Edges to Curve" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "edg:cv" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyEdgeToCurves.png" 
+        -image1 "polyEdgeToCurves.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateCurveFromPoly" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "refineCV" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Insert Knot" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "refine" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "insertKnot.png" 
+        -image1 "insertKnot.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "insertKnotPreset 1 1 1 3 0 0" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Rebuild curve options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Rebuild Curve Option Box" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "cvrebd" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "rebuildCurve.png" 
+        -image1 "rebuildCurve.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "RebuildCurveOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "cv curve to bezier" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "NURBS Curve to Bezier" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "cvtobz" 
+        -overlayLabelColor 0.15385 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cvtobz.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cvtobz.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "nurbsCurveToBezier" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Bezier to cv curve" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Bezier Curve to NURBS" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "bztocv" 
+        -overlayLabelColor 0.15385 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/bztocv.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/bztocv.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "bezierCurveToNurbs" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "NURBS to polygons options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "nurbsToPolyDialogItem" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NtoP" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "nurbsToPolygons.png" 
+        -image1 "nurbsToPolygons.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "NURBSToPolygonsOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Automatically soften/harden edges based on face angle" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Soften Edge" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "soft" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polySoftEdge.png" 
+        -image1 "polySoftEdge.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SoftPolyEdgeElements 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Automatically soften/harden edges based on face angle" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Harden Edge" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "hard" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyHardEdge.png" 
+        -image1 "polyHardEdge.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SoftPolyEdgeElements 0" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "nearPlane 0.01" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 0.5;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-0.01" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 0.01;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "NearPlane 0.5" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 0.5;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-0.5" 
+        -overlayLabelColor 1 0.9869 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 0.5;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "nearplane" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 3;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-03" 
+        -overlayLabelColor 1 0.9869 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 3;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "nearclip 6" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 6;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-06" 
+        -overlayLabelColor 1 0.9869 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 6;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+        -mi "cam_Nr_plane" ( "setAttr \"perspShape.nearClipPlane\" 6;" )
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAttr \"perspShape.nearClipPlane\" 12;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 12;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-12" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 12;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAttr \"perspShape.nearClipPlane\" 18;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 18;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-18" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 18;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAttr \"perspShape.nearClipPlane\" 22;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.nearClipPlane\" 22;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NR-22" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.nearClipPlane\" 22;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "focal-47" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.focalLength\" 47.922078;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "foca47" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.focalLength\" 40;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAttr \"perspShape.cameraScale\" 0.9;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAttr \"perspShape.cameraScale\" 0.9;" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "SCL-01" 
+        -overlayLabelColor 1 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -image1 "C:/Users/sasghar/Documents/maya/2018/prefs/icons/cam.bmp" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "setAttr \"perspShape.cameraScale\" 1.0;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Adjust clipping planes for camera in the active viewport" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Adjust Clipping Planes..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ACP" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "bonusTools.png" 
+        -image1 "bonusTools.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "bt_adjustClipPlanes" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Cleanup options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Cleanup..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Clean" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyCleanup.png" 
+        -image1 "polyCleanup.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyCleanupArgList 4 { \"0\",\"2\",\"1\",\"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1e-05\",\"0\",\"1e-05\",\"0\",\"1e-05\",\"0\",\"-1\",\"0\",\"0\" };" 
+        -sourceType "mel" 
+        -doubleClickCommand "performPolyCleanup 1" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 34
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Adjust blend shape weights" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Shape Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "blendShapeEditor.png" 
+        -image1 "blendShapeEditor.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ShapeEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle the vertex ID Visibility" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Vertices" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Vert" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconDisplay.png" 
+        -image1 "menuIconDisplay.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ToggleVertIDs" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Create a camera on the grid" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Camera" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "view.png" 
+        -image1 "view.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "camera -centerOfInterest 5 -focalLength 35 -lensSqueezeRatio 1 -cameraScale 1 -horizontalFilmAperture 1.41732 -horizontalFilmOffset 0 -verticalFilmAperture 0.94488 -verticalFilmOffset 0 -filmFit Fill -overscan 1 -motionBlur 0 -shutterAngle 144 -nearClipPlane 0.1 -farClipPlane 10000 -orthographic 0 -orthographicWidth 30 -panZoomEnabled 0 -horizontalPan 0 -verticalPan 0 -zoom 1; objectMoveCommand; cameraMakeNode 1 \"\"" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateCameraOnlyOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Open the Color Set Editor." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Color Set Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyColorSetEditor.png" 
+        -image1 "polyColorSetEditor.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "colorSetEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Paint weights on smooth bound skins" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Paint Skin Weights" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "paintSkinWeights.png" 
+        -image1 "paintSkinWeights.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ArtPaintSkinWeightsTool" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Sculpt Tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Sculpt Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Sculpt.png" 
+        -image1 "Sculpt.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshSculptTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSculptToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Smooth Tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Smooth Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Smooth.png" 
+        -image1 "Smooth.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshSmoothTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSmoothToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Relax Tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Relax Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Relax.png" 
+        -image1 "Relax.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshRelaxTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshRelaxToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Erase Target Tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Erase Target Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Erase.png" 
+        -image1 "Erase.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshEraseTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshEraseToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "// objSplineExport.mel\n//\n// 7/14/03\n// Immersion Medical Inc.\n// Mark Hovis\n//\n// Export current selection of degree 3 curves to .obj format\n// GUI provides text field input for output file name and comments.\n// Output is to an obj directory in the current project.\n// Directory is checked for existing files with the same name and prompts user if true.\n// Information about the source and creation of the .obj file provided at the head.\n//\n// usage: In Maya command line enter>  objSplineExport\n\n//////////////////////////////////ROUNDING PROCEDURE/////////////////////////\nglobal proc float roundoff( float $f, int $n )\n{\n// we divide if n < 0 to avoid numeric\n// precision problems\nif( $n > 0 )\n{\nfloat $roundScale = pow(10,$n);\nif( $f > 0 )\nreturn( ((float)(int)($f * $roundScale + 0.5)) /$roundScale );\nelse\nreturn( ((float)(int)($f * $roundScale - 0.5)) /$roundScale );\n}\nelse\n{\nfloat $roundScale = pow(10,-$n);\nif( $f > 0 )\nreturn( ((float)(int)($f/$roundScale + 0.5)) *$roundScale );\nelse\nreturn( ((float)(int)($f/$roundScale - 0.5)) *$roundScale );\n}\n}\n//////////////////////////////////////END ROUNDING PROCEDURE/////////////////\n\n// create window with input text fields\nglobal proc objSplineExport ()\n{\n\tif (`window -exists objSplineExport`) showWindow;\n\tstring $exportSpline = `window -title \"objSplineExport\" \n\t\t\t\t-in \"splineExport\" -w 408 -h 140 objSplineExportWindow`;\n\tcolumnLayout -adj true;\n\t\tseparator -style \"none\" -h 12;\n\t\tstring $splineFile = `textFieldGrp -label \"Output Obj File Name\"`;\n\t\ttext -label \"(.obj will be appended)       \" -align right;\n\t\tseparator -style \"none\" -h 12;\n//\t\tseparator -style \"out\" -h 12;\n//\t\tseparator -style \"none\" -h 12;\n//\t\tstring $splineComment = `textFieldGrp -label \"File Notes/Description\"`;\n\t\tseparator -style \"none\" -h 12;\n\t\t\n\tstring $exportCommand = (\"exportSplines\" + \" \" + $splineFile);\n\n\tframeLayout -marginWidth 0 -marginHeight 0 -bs etchedOut -labelVisible false;\n        rowColumnLayout -numberOfRows 1 -co 1 both 2;\n\t\tbutton -label \"Export Obj\"\n                \t-width 190\n                \t-command $exportCommand;\n\t\tbutton -label \"Cancel\"\n\t\t\t-width 190\n\t\t\t-command \"deleteUI objSplineExportWindow\";\n\tshowWindow objSplineExportWindow;\t\n\n} //******End of objSplineExport \n\nglobal proc exportSplines (string $splineFile)\n{\n\n\t//set output file\n\tstring $baseName = `textFieldGrp -q -text $splineFile`;\n\tstring $objName = ($baseName + \".obj\");\n\tstring $rootPath = `workspace -q -rd`;\n\tstring $objDir = `workspace -q -fre \"OBJ\"`;\n\tstring $pathFile = ($rootPath + $objDir + \"\\/\" + $objName);\n\t\n\t//check for existing .obj\n\t//int $checkExistObj = `system(\"test -f \" + $pathFile + \" && echo 0 || echo 1\")`;\n\tint $checkExistObj = fopen ($pathFile, \"r\");\n\tif ($checkExistObj > 0)\n\t{\n               string $overWrite = `confirmDialog -title \"Confirm\" -parent objSplineExportWindow \n\t\t\t\t\t-message \"File exists. Overwrite?\"\n               \t\t\t\t-button \"Yes\" -button \"No\" -defaultButton \"Yes\"\n               \t\t\t\t-cancelButton \"No\" -dismissString \"No\"`;\n                 if ($overWrite != \"Yes\"){\n\t\t\t//system(\"rm -f \" + $pathFile); \n                        return;\n\t\t\t}\n    }\n\tfclose ($checkExistObj);\n\t//header\n\tint $exportFile = fopen ($pathFile, \"w\");\n//\tfprint ($exportFile, \"# \" + $pathFile + \"\\n\");\n\tstring $currentScene = `file -q -sn`;\n//\tfprint ($exportFile, \"# Source: \" + $currentScene + \"\\n\");\n\tstring $exportTime = `system \"date\"`;\n//\tfprint ($exportFile, \"# Created: \" + $exportTime + \"\\n\");\n//\tstring $splnComment = `textFieldGrp -q -text $splineComment`;\n//\tfprint ($exportFile, \"# Notes/Description: \" + $splnComment + \"\\n\");\n//\tfprint ($exportFile, \"\\n\");\n\n\n\n\t//export stuff\n\tstring $currentList[] = `ls -sl`;\n\tstring $currentSel;\n\tint $cvCount = 0;\n\n\t//write cv's\n\tfor ($currentSel in $currentList)\n\t{\n\t\tstring $cvNumbers = \" \";\n\t\tfprint ($exportFile, \"g \" + \"\\n\");\n//\t\tfprint ($exportFile, \"g Obj_\" + $currentSel + \"\\n\");\n\t\tint $cvs = `getAttr -size ($currentSel + \".cp\")`;\n\t\tfor ($i=0; $i<$cvs; $i++) \n\t\t{\n\t\t\tfloat $cvPos[] = `getAttr ($currentSel + \".cp[\" + $i + \"]\")`;\n\t\t\tfloat $cvX = eval(\"roundoff \" + $cvPos[0] + \" 6\");\n\t\t\tfloat $cvY = eval(\"roundoff \" + $cvPos[1] + \" 6\");\n\t\t\tfloat $cvZ = eval(\"roundoff \" + $cvPos[2] + \" 6\");\n\t\t\tfprint ($exportFile, \"v \" + $cvX + \" \" + $cvY + \" \" +$cvZ + \"\\n\");\n\t\t\t$cvCount += 1;\n\t\t\t$cvNumbers = ($cvNumbers + $cvCount + \" \"); \n\t\t}\n\t\n\t\t//write curve info\n\t\tfprint ($exportFile, \"cstype bspline\" + \"\\n\");\n\t\tfprint ($exportFile, \"deg 3\" + \"\\n\");\n\t\tfprint ($exportFile, \"g Obj_\" + $currentSel + \"\\n\");\n\t\tint $min = `getAttr ($currentSel + \".min\")`;\n\t\tint $max = `getAttr ($currentSel + \".max\")`;\n\t\tfprint ($exportFile, \"curv \" + $min + \" \" + $max + $cvNumbers + \"\\n\");\n\n\t\t//write knot info\n\t\tstring $splineInfo = `createNode curveInfo`;\n\t\tstring $splineOut = ($currentSel + \".worldSpace\");\n\t\tstring $infoInput = ($splineInfo + \".inputCurve\");\n\t\tconnectAttr $splineOut $infoInput;\n\t\tfloat $knotList[] = `getAttr ($splineInfo + \".knots\")`;\n\t\tint $knotSize = `getAttr -size ($splineInfo + \".knots\")`;\n\t\tfprint ($exportFile, \"parm u \" + $knotList[0] + \" \");\n\t\tint $knotNum;\n\t\tfor ($knotNum in $knotList)\n\t\t{\n\t\t\tfprint ($exportFile, $knotNum + \" \");\n\t\t}\n\t\tfprint ($exportFile, $knotNum + \"\\n\");\n//\t\tfprint ($exportFile, \"end\" + \"\\n\" + \"\\n\");\n\t\tfprint ($exportFile, \"end\" + \"\\n\");\n\t\tdelete $splineInfo;\n\t}\n\tfprint ($exportFile, \"g\");\n\tfclose $exportFile;\n\tint $sysCheckExportSize = `system(\"test -s \" + $pathFile + \" && echo 0 || echo 1\")`;\n\tif ($sysCheckExportSize == 0)\n\t\t{\n\t\tprint (\"Result: \" + $pathFile + \"\\n\");\n\t\tdeleteUI -window objSplineExportWindow;\n\t\t}\n\t   else\n\t\tprint (\"Result: file not written \\n\");\n\tselect -r $currentList;\n}" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "// objSplineExport.mel\n//\n// 7/14/03\n// Immersion Medical Inc.\n/..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "// objSplineExport.mel\n//\n// 7/14/03\n// Immersion Medical Inc.\n// Mark Hovis\n//\n// Export current selection of degree 3 curves to .obj format\n// GUI provides text field input for output file name and comments.\n// Output is to an obj directory in the current project.\n// Directory is checked for existing files with the same name and prompts user if true.\n// Information about the source and creation of the .obj file provided at the head.\n//\n// usage: In Maya command line enter>  objSplineExport\n\n//////////////////////////////////ROUNDING PROCEDURE/////////////////////////\nglobal proc float roundoff( float $f, int $n )\n{\n// we divide if n < 0 to avoid numeric\n// precision problems\nif( $n > 0 )\n{\nfloat $roundScale = pow(10,$n);\nif( $f > 0 )\nreturn( ((float)(int)($f * $roundScale + 0.5)) /$roundScale );\nelse\nreturn( ((float)(int)($f * $roundScale - 0.5)) /$roundScale );\n}\nelse\n{\nfloat $roundScale = pow(10,-$n);\nif( $f > 0 )\nreturn( ((float)(int)($f/$roundScale + 0.5)) *$roundScale );\nelse\nreturn( ((float)(int)($f/$roundScale - 0.5)) *$roundScale );\n}\n}\n//////////////////////////////////////END ROUNDING PROCEDURE/////////////////\n\n// create window with input text fields\nglobal proc objSplineExport ()\n{\n\tif (`window -exists objSplineExport`) showWindow;\n\tstring $exportSpline = `window -title \"objSplineExport\" \n\t\t\t\t-in \"splineExport\" -w 408 -h 140 objSplineExportWindow`;\n\tcolumnLayout -adj true;\n\t\tseparator -style \"none\" -h 12;\n\t\tstring $splineFile = `textFieldGrp -label \"Output Obj File Name\"`;\n\t\ttext -label \"(.obj will be appended)       \" -align right;\n\t\tseparator -style \"none\" -h 12;\n//\t\tseparator -style \"out\" -h 12;\n//\t\tseparator -style \"none\" -h 12;\n//\t\tstring $splineComment = `textFieldGrp -label \"File Notes/Description\"`;\n\t\tseparator -style \"none\" -h 12;\n\t\t\n\tstring $exportCommand = (\"exportSplines\" + \" \" + $splineFile);\n\n\tframeLayout -marginWidth 0 -marginHeight 0 -bs etchedOut -labelVisible false;\n        rowColumnLayout -numberOfRows 1 -co 1 both 2;\n\t\tbutton -label \"Export Obj\"\n                \t-width 190\n                \t-command $exportCommand;\n\t\tbutton -label \"Cancel\"\n\t\t\t-width 190\n\t\t\t-command \"deleteUI objSplineExportWindow\";\n\tshowWindow objSplineExportWindow;\t\n\n} //******End of objSplineExport \n\nglobal proc exportSplines (string $splineFile)\n{\n\n\t//set output file\n\tstring $baseName = `textFieldGrp -q -text $splineFile`;\n\tstring $objName = ($baseName + \".obj\");\n\tstring $rootPath = `workspace -q -rd`;\n\tstring $objDir = `workspace -q -fre \"OBJ\"`;\n\tstring $pathFile = ($rootPath + $objDir + \"\\/\" + $objName);\n\t\n\t//check for existing .obj\n\t//int $checkExistObj = `system(\"test -f \" + $pathFile + \" && echo 0 || echo 1\")`;\n\tint $checkExistObj = fopen ($pathFile, \"r\");\n\tif ($checkExistObj > 0)\n\t{\n               string $overWrite = `confirmDialog -title \"Confirm\" -parent objSplineExportWindow \n\t\t\t\t\t-message \"File exists. Overwrite?\"\n               \t\t\t\t-button \"Yes\" -button \"No\" -defaultButton \"Yes\"\n               \t\t\t\t-cancelButton \"No\" -dismissString \"No\"`;\n                 if ($overWrite != \"Yes\"){\n\t\t\t//system(\"rm -f \" + $pathFile); \n                        return;\n\t\t\t}\n    }\n\tfclose ($checkExistObj);\n\t//header\n\tint $exportFile = fopen ($pathFile, \"w\");\n//\tfprint ($exportFile, \"# \" + $pathFile + \"\\n\");\n\tstring $currentScene = `file -q -sn`;\n//\tfprint ($exportFile, \"# Source: \" + $currentScene + \"\\n\");\n\tstring $exportTime = `system \"date\"`;\n//\tfprint ($exportFile, \"# Created: \" + $exportTime + \"\\n\");\n//\tstring $splnComment = `textFieldGrp -q -text $splineComment`;\n//\tfprint ($exportFile, \"# Notes/Description: \" + $splnComment + \"\\n\");\n//\tfprint ($exportFile, \"\\n\");\n\n\n\n\t//export stuff\n\tstring $currentList[] = `ls -sl`;\n\tstring $currentSel;\n\tint $cvCount = 0;\n\n\t//write cv's\n\tfor ($currentSel in $currentList)\n\t{\n\t\tstring $cvNumbers = \" \";\n\t\tfprint ($exportFile, \"g \" + \"\\n\");\n//\t\tfprint ($exportFile, \"g Obj_\" + $currentSel + \"\\n\");\n\t\tint $cvs = `getAttr -size ($currentSel + \".cp\")`;\n\t\tfor ($i=0; $i<$cvs; $i++) \n\t\t{\n\t\t\tfloat $cvPos[] = `getAttr ($currentSel + \".cp[\" + $i + \"]\")`;\n\t\t\tfloat $cvX = eval(\"roundoff \" + $cvPos[0] + \" 6\");\n\t\t\tfloat $cvY = eval(\"roundoff \" + $cvPos[1] + \" 6\");\n\t\t\tfloat $cvZ = eval(\"roundoff \" + $cvPos[2] + \" 6\");\n\t\t\tfprint ($exportFile, \"v \" + $cvX + \" \" + $cvY + \" \" +$cvZ + \"\\n\");\n\t\t\t$cvCount += 1;\n\t\t\t$cvNumbers = ($cvNumbers + $cvCount + \" \"); \n\t\t}\n\t\n\t\t//write curve info\n\t\tfprint ($exportFile, \"cstype bspline\" + \"\\n\");\n\t\tfprint ($exportFile, \"deg 3\" + \"\\n\");\n\t\tfprint ($exportFile, \"g Obj_\" + $currentSel + \"\\n\");\n\t\tint $min = `getAttr ($currentSel + \".min\")`;\n\t\tint $max = `getAttr ($currentSel + \".max\")`;\n\t\tfprint ($exportFile, \"curv \" + $min + \" \" + $max + $cvNumbers + \"\\n\");\n\n\t\t//write knot info\n\t\tstring $splineInfo = `createNode curveInfo`;\n\t\tstring $splineOut = ($currentSel + \".worldSpace\");\n\t\tstring $infoInput = ($splineInfo + \".inputCurve\");\n\t\tconnectAttr $splineOut $infoInput;\n\t\tfloat $knotList[] = `getAttr ($splineInfo + \".knots\")`;\n\t\tint $knotSize = `getAttr -size ($splineInfo + \".knots\")`;\n\t\tfprint ($exportFile, \"parm u \" + $knotList[0] + \" \");\n\t\tint $knotNum;\n\t\tfor ($knotNum in $knotList)\n\t\t{\n\t\t\tfprint ($exportFile, $knotNum + \" \");\n\t\t}\n\t\tfprint ($exportFile, $knotNum + \"\\n\");\n//\t\tfprint ($exportFile, \"end\" + \"\\n\" + \"\\n\");\n\t\tfprint ($exportFile, \"end\" + \"\\n\");\n\t\tdelete $splineInfo;\n\t}\n\tfprint ($exportFile, \"g\");\n\tfclose $exportFile;\n\tint $sysCheckExportSize = `system(\"test -s \" + $pathFile + \" && echo 0 || echo 1\")`;\n\tif ($sysCheckExportSize == 0)\n\t\t{\n\t\tprint (\"Result: \" + $pathFile + \"\\n\");\n\t\tdeleteUI -window objSplineExportWindow;\n\t\t}\n\t   else\n\t\tprint (\"Result: file not written \\n\");\n\tselect -r $currentList;\n}" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "addShelfSeparator();" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "x" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "x" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "addShelfSeparator();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "addShelfSeparator();" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "addShelfSeparator();" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "addShelfSeparator();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Set the normals of selected vertices or vertex-faces within a specified distance of each other to their average" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Average" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "polyNormalAverage.png" 
+        -image1 "polyNormalAverage.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "polyAverageNormal -prenormalize 1 -allowZeroNormal 0 -postnormalize 0 -distance 0.1 -replaceNormalXYZ 1 0 0 " 
+        -sourceType "mel" 
+        -doubleClickCommand "AveragePolygonNormalsOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Flatten Tool: Level a surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Flatten Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Flatten.png" 
+        -image1 "Flatten.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshFlattenTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshFlattenToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Toggle the global pref for GPU Overide on/off." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Toggle GPU Acceleration" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "TGA" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "bonusTools.png" 
+        -image1 "bonusTools.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "bt_toggleGPUOverride" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 
